@@ -6,7 +6,7 @@
 /*   By: sikeda <sikeda@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/18 10:43:11 by sikeda            #+#    #+#             */
-/*   Updated: 2021/11/18 23:03:36 by sikeda           ###   ########.fr       */
+/*   Updated: 2021/11/18 23:30:19 by sikeda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ class Form;
 class Bureaucrat
 {
 	const std::string	_name;
-	int					_grade;	// that ranges from 1 (highest possible) to 150 (lowest possible)
+	int					_grade;
 
 public:
 	// orthodox canonical form

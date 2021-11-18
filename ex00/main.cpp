@@ -6,7 +6,7 @@
 /*   By: sikeda <sikeda@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/18 11:47:08 by sikeda            #+#    #+#             */
-/*   Updated: 2021/11/18 11:59:55 by sikeda           ###   ########.fr       */
+/*   Updated: 2021/11/18 21:28:58 by sikeda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ int	main()
 		test.incrementGrade();
 		std::cout << test << std::endl;
 	}
-	catch(const std::exception& e)
+	catch (std::exception & e)
 	{
 		std::cout << e.what() << std::endl;
 	}
@@ -59,7 +59,7 @@ int	main()
 		test.decrementGrade();
 		std::cout << test << std::endl;
 	}
-	catch(const std::exception& e)
+	catch (std::exception & e)
 	{
 		std::cout << e.what() << std::endl;
 	}
@@ -75,7 +75,7 @@ int	main()
 		test.decrementGrade();
 		std::cout << test << std::endl;
 	}
-	catch(const std::exception& e)
+	catch (std::exception & e)
 	{
 		std::cout << e.what() << std::endl;
 	}
@@ -87,7 +87,7 @@ int	main()
 
 		std::cout << test << std::endl;
 	}
-	catch(const std::exception& e)
+	catch (std::exception & e)
 	{
 		std::cout << e.what() << std::endl;
 	}
@@ -99,7 +99,7 @@ int	main()
 
 		std::cout << test << std::endl;
 	}
-	catch(const std::exception& e)
+	catch (std::exception & e)
 	{
 		std::cout << e.what() << std::endl;
 	}
@@ -113,7 +113,7 @@ int	main()
 		std::cout << test1 << std::endl;
 		std::cout << test2 << std::endl;
 	}
-	catch(const std::exception& e)
+	catch (std::exception & e)
 	{
 		std::cout << e.what() << std::endl;
 	}

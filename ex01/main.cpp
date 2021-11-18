@@ -6,7 +6,7 @@
 /*   By: sikeda <sikeda@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/18 11:47:08 by sikeda            #+#    #+#             */
-/*   Updated: 2021/11/18 16:04:07 by sikeda           ###   ########.fr       */
+/*   Updated: 2021/11/18 21:39:22 by sikeda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ int	main()
 	{
 		Form	err_form("Error Form", 0, 1);
 	}
-	catch(const std::exception& e)
+	catch (std::exception & e)
 	{
 		CATCH_ERR;
 	}
@@ -45,7 +45,7 @@ int	main()
 	{
 		Form	err_form("Error Form", 151, 150);
 	}
-	catch(const std::exception& e)
+	catch (std::exception & e)
 	{
 		CATCH_ERR;
 	}
@@ -54,7 +54,7 @@ int	main()
 	{
 		Form	err_form("Error Form", 1, 0);
 	}
-	catch(const std::exception& e)
+	catch (std::exception & e)
 	{
 		CATCH_ERR;
 	}
@@ -63,7 +63,7 @@ int	main()
 	{
 		Form	err_form("Error Form", 150, 151);
 	}
-	catch(const std::exception& e)
+	catch (std::exception & e)
 	{
 		CATCH_ERR;
 	}
@@ -79,7 +79,7 @@ int	main()
 		bureaucrat.signForm(form);
 		std::cout << form << std::endl;
 	}
-	catch(const std::exception& e)
+	catch (std::exception & e)
 	{
 		CATCH_ERR;
 	}
@@ -95,7 +95,7 @@ int	main()
 		bureaucrat.signForm(form);
 		std::cout << form << std::endl;
 	}
-	catch(const std::exception& e)
+	catch (std::exception & e)
 	{
 		CATCH_ERR;
 	}
@@ -111,7 +111,7 @@ int	main()
 		bureaucrat.signForm(form);
 		std::cout << form << std::endl;
 	}
-	catch(const std::exception& e)
+	catch (std::exception & e)
 	{
 		CATCH_ERR;
 	}

@@ -6,7 +6,7 @@
 /*   By: sikeda <sikeda@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/18 10:43:11 by sikeda            #+#    #+#             */
-/*   Updated: 2021/11/18 11:44:38 by sikeda           ###   ########.fr       */
+/*   Updated: 2021/11/18 16:08:36 by sikeda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,6 @@
 
 class Bureaucrat
 {
-private:
 	const static int	HIGHEST = 1;
 	const static int	LOWEST = 150;
 

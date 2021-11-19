@@ -6,7 +6,7 @@
 /*   By: sikeda <sikeda@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/18 12:47:01 by sikeda            #+#    #+#             */
-/*   Updated: 2021/11/18 21:57:33 by sikeda           ###   ########.fr       */
+/*   Updated: 2021/11/19 17:19:29 by sikeda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -126,7 +126,7 @@ const char*	Form::GradeTooLowException::what() const throw()
 
 const char*	Form::UnsignedException::what() const throw()
 {
-	return "unsigned";
+	return "form is unsigned";
 }
 
 /* ************************************************************************** */

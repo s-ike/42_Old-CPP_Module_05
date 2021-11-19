@@ -6,7 +6,7 @@
 /*   By: sikeda <sikeda@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/18 11:47:08 by sikeda            #+#    #+#             */
-/*   Updated: 2021/11/19 12:10:22 by sikeda           ###   ########.fr       */
+/*   Updated: 2021/11/19 14:26:31 by sikeda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -131,7 +131,7 @@ int	main()
 		std::cout << "test2 =" << std::endl;
 		std::cout << test2 << std::endl;
 
-		std::cout << "test2 = test2; test2 =" << std::endl;
+		std::cout << "test2 = test1; test2 =" << std::endl;
 		test2 = test1;
 		std::cout << test2 << std::endl;
 	}

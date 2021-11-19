@@ -6,7 +6,7 @@
 /*   By: sikeda <sikeda@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/18 22:55:15 by sikeda            #+#    #+#             */
-/*   Updated: 2021/11/19 17:26:11 by sikeda           ###   ########.fr       */
+/*   Updated: 2021/11/19 18:09:27 by sikeda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,7 +60,7 @@ int	main()
 
 		bureaucrat.signForm(form);
 		std::cout << form << std::endl;
-		form.execute(bureaucrat);
+		bureaucrat.executeForm(form);
 	}
 
 	{
@@ -70,7 +70,7 @@ int	main()
 
 		bureaucrat.signForm(form);
 		std::cout << form << std::endl;
-		form.execute(bureaucrat);
+		bureaucrat.executeForm(form);
 	}
 
 	{
@@ -80,7 +80,7 @@ int	main()
 
 		bureaucrat.signForm(form);
 		std::cout << form << std::endl;
-		form.execute(bureaucrat);
+		bureaucrat.executeForm(form);
 	}
 
 	{

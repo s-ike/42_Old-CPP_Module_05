@@ -6,7 +6,7 @@
 /*   By: sikeda <sikeda@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/18 11:47:08 by sikeda            #+#    #+#             */
-/*   Updated: 2021/11/18 21:39:22 by sikeda           ###   ########.fr       */
+/*   Updated: 2021/11/19 16:46:14 by sikeda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,14 @@ void	print_header(const std::string &str)
 		<< "\n[ " << str << " ]"
 		<< COLOR_RESET
 		<< std::endl;
+}
+
+void	test_signForm(Form& form, Bureaucrat& bureaucrat)
+{
+	std::cout << bureaucrat << std::endl;
+	std::cout << form << std::endl;
+	bureaucrat.signForm(form);
+	std::cout << form << std::endl;
 }
 
 int	main()
@@ -73,11 +81,7 @@ int	main()
 	{
 		Form		form("Presidential Pardon Form", 25, 5);
 		Bureaucrat	bureaucrat("bureaucrat-1", 1);
-
-		std::cout << bureaucrat << std::endl;
-		std::cout << form << std::endl;
-		bureaucrat.signForm(form);
-		std::cout << form << std::endl;
+		test_signForm(form, bureaucrat);
 	}
 	catch (std::exception & e)
 	{
@@ -89,11 +93,7 @@ int	main()
 	{
 		Form		form("Presidential Pardon Form", 25, 5);
 		Bureaucrat	bureaucrat("bureaucrat-2", 150);
-
-		std::cout << bureaucrat << std::endl;
-		std::cout << form << std::endl;
-		bureaucrat.signForm(form);
-		std::cout << form << std::endl;
+		test_signForm(form, bureaucrat);
 	}
 	catch (std::exception & e)
 	{
@@ -105,11 +105,7 @@ int	main()
 	{
 		Form		form("Presidential Pardon Form", 25, 5);
 		Bureaucrat	bureaucrat("bureaucrat-3", 25);
-
-		std::cout << bureaucrat << std::endl;
-		std::cout << form << std::endl;
-		bureaucrat.signForm(form);
-		std::cout << form << std::endl;
+		test_signForm(form, bureaucrat);
 	}
 	catch (std::exception & e)
 	{

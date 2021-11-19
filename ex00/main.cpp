@@ -6,7 +6,7 @@
 /*   By: sikeda <sikeda@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/18 11:47:08 by sikeda            #+#    #+#             */
-/*   Updated: 2021/11/19 14:26:31 by sikeda           ###   ########.fr       */
+/*   Updated: 2021/11/19 14:45:45 by sikeda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@
 #define COLOR_RESET	"\033[m"
 #define COLOR_RED	"\033[31m"
 #define COLOR_CYAN	"\033[36m"
+
+#define CATCH_ERR (std::cout << COLOR_RED << e.what() << COLOR_RESET << std::endl)
 
 void	print_header(const std::string &str)
 {
@@ -41,7 +43,7 @@ int	main()
 	}
 	catch (std::exception & e)
 	{
-		std::cout << e.what() << std::endl;
+		CATCH_ERR;
 	}
 
 	try
@@ -61,7 +63,7 @@ int	main()
 	}
 	catch (std::exception & e)
 	{
-		std::cout << e.what() << std::endl;
+		CATCH_ERR;
 	}
 
 	try
@@ -77,7 +79,7 @@ int	main()
 	}
 	catch (std::exception & e)
 	{
-		std::cout << e.what() << std::endl;
+		CATCH_ERR;
 	}
 
 	try
@@ -89,7 +91,7 @@ int	main()
 	}
 	catch (std::exception & e)
 	{
-		std::cout << e.what() << std::endl;
+		CATCH_ERR;
 	}
 
 	try
@@ -101,7 +103,7 @@ int	main()
 	}
 	catch (std::exception & e)
 	{
-		std::cout << e.what() << std::endl;
+		CATCH_ERR;
 	}
 
 	try
@@ -117,7 +119,7 @@ int	main()
 	}
 	catch (std::exception & e)
 	{
-		std::cout << e.what() << std::endl;
+		CATCH_ERR;
 	}
 
 	try
@@ -137,6 +139,6 @@ int	main()
 	}
 	catch (std::exception & e)
 	{
-		std::cout << e.what() << std::endl;
+		CATCH_ERR;
 	}
 }

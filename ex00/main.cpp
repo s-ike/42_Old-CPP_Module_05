@@ -6,7 +6,7 @@
 /*   By: sikeda <sikeda@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/18 11:47:08 by sikeda            #+#    #+#             */
-/*   Updated: 2021/11/18 21:28:58 by sikeda           ###   ########.fr       */
+/*   Updated: 2021/11/19 12:10:22 by sikeda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ int	main()
 	try
 	{
 		print_header("normal (1)");
-		Bureaucrat	test("test0", 1);
+		Bureaucrat	test("test1", 1);
 
 		std::cout << test << std::endl;
 
@@ -110,7 +110,29 @@ int	main()
 		Bureaucrat	test1("test1", 1);
 		Bureaucrat	test2(test1);
 
+		std::cout << "test1 =" << std::endl;
 		std::cout << test1 << std::endl;
+		std::cout << "test2(test1); test2 =" << std::endl;
+		std::cout << test2 << std::endl;
+	}
+	catch (std::exception & e)
+	{
+		std::cout << e.what() << std::endl;
+	}
+
+	try
+	{
+		print_header("Bureaucrat assignation operator test");
+		Bureaucrat	test1("test1", 1);
+		Bureaucrat	test2("test2", 150);
+
+		std::cout << "test1 =" << std::endl;
+		std::cout << test1 << std::endl;
+		std::cout << "test2 =" << std::endl;
+		std::cout << test2 << std::endl;
+
+		std::cout << "test2 = test2; test2 =" << std::endl;
+		test2 = test1;
 		std::cout << test2 << std::endl;
 	}
 	catch (std::exception & e)

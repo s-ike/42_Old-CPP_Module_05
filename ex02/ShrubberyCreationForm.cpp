@@ -6,7 +6,7 @@
 /*   By: sikeda <sikeda@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/18 16:23:35 by sikeda            #+#    #+#             */
-/*   Updated: 2021/11/18 22:32:51 by sikeda           ###   ########.fr       */
+/*   Updated: 2021/11/21 22:30:15 by sikeda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,7 +56,7 @@ void	ShrubberyCreationForm::execute(Bureaucrat const & executor) const
 			<< "{               }\n"
 			<< " \\  _-     -_  /\n"
 			<< "   ~  \\\\ //  ~\n"
-			<< "       | |     \n"
-			<< "       | |     \n"
+			<< "       | |\n"
+			<< "       | |\n"
 			<< "      // \\\\\n";
 }
